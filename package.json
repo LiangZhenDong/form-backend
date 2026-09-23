@@ -1,0 +1,16 @@
+{
+  "name": "form-backend",
+  "version": "0.1.0",
+  "description": "Self-hosted form backend for static sites on Cloudflare Workers + D1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler d1 migrations apply DB --local && wrangler dev",
+    "deploy": "wrangler d1 migrations apply DB --remote && wrangler deploy",
+    "test": "node test/logic.test.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
+  }
+}

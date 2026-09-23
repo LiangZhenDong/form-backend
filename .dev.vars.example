@@ -1,0 +1,8 @@
+# Copy to .dev.vars for local dev. In production set each with `npx wrangler secret put NAME`.
+# Required: 16+ random characters; used to log in to /admin.
+ADMIN_TOKEN=change-me-to-a-long-random-string
+# Required: random string used to hash submitter IPs.
+IP_SALT=change-me-to-another-random-string
+# Optional
+TELEGRAM_BOT_TOKEN=
+TURNSTILE_SECRET=
