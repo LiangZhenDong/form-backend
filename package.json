@@ -11,6 +11,6 @@
     "test": "node test/logic.test.js"
   },
   "devDependencies": {
-    "wrangler": "^4.36.0"
+    "wrangler": "^4.156.0"
   }
 }
